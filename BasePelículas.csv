@@ -1,5 +1,5 @@
-ID,Nombre Pelicula/Serie,Duración,Género,Calificación,Fecha Estreno,Nombre Episodio,Temporada,Num Episodio,ID Episodio
-tt1480055,Game Of Thrones,57,"Action, Adventure, Drama, Fantasy, Romance",9,04/17/2011,Winter Is Coming,1,1,tt1668899
+"ID",Nombre Pelicula/Serie,Duración,Género,Calificación,Fecha Estreno,Nombre Episodio,Temporada,Num Episodio,ID Episodio
+tt0944947,Game Of Thrones,57,"Action, Adventure, Drama, Fantasy, Romance",9,04/17/2011,Winter Is Coming,1,1,tt1668899
 tt0107290,Jurassic Park,127,"Action, Adventure, Sci-Fi, Thriller",8.1,11/6/1993,,,,
 tt0944947,Game Of Thrones,57,"Action, Adventure, Drama, Fantasy, Romance",8.8,4/2/2011,The Kingsroad,1,2,tt1668746
 tt0944947,Game Of Thrones,57,"Action, Adventure, Drama, Fantasy, Romance",8.7,5/1/2011,Lord Snow,1,3,tt1829962
