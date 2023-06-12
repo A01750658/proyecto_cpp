@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="g5spBLx_vvhdmmsODNRa" name="Page-1">
-        <mxGraphModel dx="738" dy="413" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="1403" dy="784" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -19,14 +19,14 @@
                 <mxCell id="29" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="27" vertex="1">
                     <mxGeometry y="70" width="390" height="8" as="geometry"/>
                 </mxCell>
-                <mxCell id="30" value="+ allVideos(): void&#10;+ showPeliculas(): void&#10;+ showSeries(): void&#10;+ allVideosFilt(calif: float): void&#10;+ showPeliculasFilt(calif: float): void&#10;+ showSeriesFilt(calif: float): void&#10;+ allVideosFilt(calif: float, genero: string): void&#10;+ showPeliculasFilt(calif: float, genero: string): void&#10;+ showSeriesFilt(calif: float, genero: string): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="27" vertex="1">
+                <mxCell id="30" value="+ allVideos(): void&#10;+ showVidsCalif(calif: float): void&#10;+ showVidsGen(gen: string): void&#10;+ showEp(nomS: string): void&#10;+ showPeli(calif: float): void&#10;+ calificar(vidNom: string, calif: float): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="27" vertex="1">
                     <mxGeometry y="78" width="390" height="152" as="geometry"/>
                 </mxCell>
                 <mxCell id="31" value="&lt;&lt;interface&gt;&gt; Contenido" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-                    <mxGeometry x="360" y="585" width="160" height="110" as="geometry"/>
+                    <mxGeometry x="310" y="570" width="250" height="140" as="geometry"/>
                 </mxCell>
-                <mxCell id="34" value="+ show(): void&#10;+ calificar(calif: float): void&#10;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="31" vertex="1">
-                    <mxGeometry y="26" width="160" height="84" as="geometry"/>
+                <mxCell id="34" value="+ allVideos(): void&#10;+ showVidsCalif(calif: float): void&#10;+ showVidsGen(gen: string): void&#10;+ showEp(nomS: string): void&#10;+ showPeli(calif: float): void&#10;+ calificar(vidNom: string, calif: float): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="31" vertex="1">
+                    <mxGeometry y="26" width="250" height="114" as="geometry"/>
                 </mxCell>
                 <mxCell id="38" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;entryX=0.499;entryY=1.072;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="27" target="43" edge="1">
                     <mxGeometry width="160" relative="1" as="geometry">
@@ -43,11 +43,11 @@
                 <mxCell id="42" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="40" vertex="1">
                     <mxGeometry y="52" width="160" height="8" as="geometry"/>
                 </mxCell>
-                <mxCell id="43" value="+ verCatalogo(): void&#10;+ calificarVid(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="40" vertex="1">
+                <mxCell id="43" value="+ verCatalogo(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="40" vertex="1">
                     <mxGeometry y="60" width="160" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="44" value="Pelicula" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-                    <mxGeometry x="130" y="575" width="160" height="180" as="geometry"/>
+                    <mxGeometry x="80" y="575" width="160" height="180" as="geometry"/>
                 </mxCell>
                 <mxCell id="45" value="- idV: string&#10;- nombre: string&#10;- duracion: string&#10;- fecha: string&#10;- calificacion: float&#10;- genero: string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="44" vertex="1">
                     <mxGeometry y="26" width="160" height="104" as="geometry"/>
@@ -59,9 +59,9 @@
                     <mxGeometry y="138" width="160" height="42" as="geometry"/>
                 </mxCell>
                 <mxCell id="50" value="Serie" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-                    <mxGeometry x="570" y="570" width="160" height="190" as="geometry"/>
+                    <mxGeometry x="630" y="570" width="160" height="190" as="geometry"/>
                 </mxCell>
-                <mxCell id="51" value="- vector &lt;Episodio&gt;&#10;- idV: string&#10;- nombre: string&#10;- duracion: string&#10;- fecha: string&#10;- calificacion: float&#10;- genero: string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="50" vertex="1">
+                <mxCell id="51" value="- vector &lt;Episodio*&gt;&#10;- idV: string&#10;- nombre: string&#10;- duracion: string&#10;- fecha: string&#10;- calificacion: float&#10;- genero: string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="50" vertex="1">
                     <mxGeometry y="26" width="160" height="114" as="geometry"/>
                 </mxCell>
                 <mxCell id="52" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="50" vertex="1">
@@ -71,7 +71,7 @@
                     <mxGeometry y="148" width="160" height="42" as="geometry"/>
                 </mxCell>
                 <mxCell id="54" value="Episodio" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-                    <mxGeometry x="560" y="894" width="170" height="104" as="geometry"/>
+                    <mxGeometry x="620" y="894" width="170" height="104" as="geometry"/>
                 </mxCell>
                 <mxCell id="55" value="- temporada: string&#10;- ep: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="54" vertex="1">
                     <mxGeometry y="26" width="170" height="44" as="geometry"/>
@@ -83,7 +83,7 @@
                     <mxGeometry y="78" width="170" height="26" as="geometry"/>
                 </mxCell>
                 <mxCell id="58" value="Videos" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-                    <mxGeometry x="120" y="859" width="160" height="174" as="geometry"/>
+                    <mxGeometry x="70" y="859" width="160" height="174" as="geometry"/>
                 </mxCell>
                 <mxCell id="59" value="- idV: string&#10;- nombre: string&#10;- duracion: string&#10;- fecha: string&#10;- calificación: float" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="58" vertex="1">
                     <mxGeometry y="26" width="160" height="114" as="geometry"/>
@@ -118,23 +118,23 @@
                         <mxPoint x="370" y="603" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="66" value="" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.513;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="44" target="30">
+                <mxCell id="66" value="" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.496;entryY=1.012;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="44" target="30">
                     <mxGeometry width="160" relative="1" as="geometry">
                         <mxPoint x="400" y="500" as="sourcePoint"/>
-                        <mxPoint x="380" y="470" as="targetPoint"/>
+                        <mxPoint x="350" y="470" as="targetPoint"/>
                         <Array as="points">
-                            <mxPoint x="210" y="500"/>
-                            <mxPoint x="430" y="500"/>
+                            <mxPoint x="160" y="500"/>
+                            <mxPoint x="424" y="500"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="68" value="" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;" edge="1" parent="1">
+                <mxCell id="68" value="" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0.998;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="50" target="30">
                     <mxGeometry width="160" relative="1" as="geometry">
                         <mxPoint x="650" y="570" as="sourcePoint"/>
-                        <mxPoint x="430" y="430" as="targetPoint"/>
+                        <mxPoint x="460" y="460" as="targetPoint"/>
                         <Array as="points">
-                            <mxPoint x="650" y="500"/>
-                            <mxPoint x="430" y="500"/>
+                            <mxPoint x="710" y="500"/>
+                            <mxPoint x="425" y="500"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
