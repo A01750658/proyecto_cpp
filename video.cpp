@@ -1,19 +1,14 @@
-#include <iostream>
-#include <string>
 #include "video.h"
+using std::cout;
 
-Video::Video(string idV, string nombre, string duracion, string fecha, float calificacion, int numEp){
-
+video::video(string idV1,string nombre1,string duracion1, string fecha1, float calificacion1){
+    idV = idV1;
+    nombre = nombre1;
+    duracion = duracion1;
+    fecha = fecha1;
+    calificacion = calificacion1;
 }
 
-Video::Video(string idV, string nombre, string duracion, string fecha, float calificacion){
-
-}
-
-string Video::getName(){
-
-}
-
-void Video::display(){
-    
+void video::disp(){
+    cout<<"Se muestra video"<<"\n";
 }

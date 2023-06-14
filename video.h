@@ -15,7 +15,6 @@ class video{
         float calificacion;
     public:
         video(string idV1,string nombre1,string duracion1, string fecha1, float calificacion1);
-
         void disp();
 };
 
