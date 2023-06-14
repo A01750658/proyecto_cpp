@@ -3,17 +3,16 @@
 
 #include <iostream>
 #include <string>
-
 using std::string;
 
-class Contenido{
+class contenido{
     public:
-        virtual void show() = 0;
-        virtual void calificar(float calif) = 0;
-        virtual void allVideosFiltCal(float calif) = 0;
-        virtual void allVideosFiltGen(string gen) = 0;
-        virtual void showPeliculasFilt(float calif) = 0;
-        virtual void showSeriesFilt(float calif) = 0;
+        virtual void allVideos() = 0;
+        virtual void showVidsCalif(float calif) = 0;
+        virtual void showVidsGen(string gen) = 0;
+        virtual void showEp(string nomS) = 0;
+        virtual void showPeli(float calif) = 0;
+        virtual void calificar(string vidNom, float calif) = 0;
 };
 
 #endif

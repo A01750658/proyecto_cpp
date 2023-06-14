@@ -1,1 +1,0 @@
-.//pelicula.o: pelicula.cpp
