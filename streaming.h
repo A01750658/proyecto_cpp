@@ -2,7 +2,7 @@
 #define streaming_H
 #include "catalogo.h"
 
-class streaming{
+class Streaming{
     private:
         catalogo catalogo;
     public:

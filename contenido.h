@@ -5,7 +5,7 @@
 #include <string>
 using std::string;
 
-class contenido{
+class Contenido{
     public:
         virtual void allVideos() = 0;
         virtual void showVidsCalif(float calif) = 0;

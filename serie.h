@@ -3,13 +3,13 @@
 
 #include <iostream>
 #include <vector>
-#include "eposodio.h"
+#include "episodio.h"
 using std::string;
 using std::vector;
 
-class serie{
+class Serie{
     private:
-        vector <episodio*> eps;
+        vector <Episodio*> eps;
         string idV, nombre, duracion, fecha, genero;
         float calificacion;
 

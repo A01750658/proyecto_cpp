@@ -5,12 +5,12 @@
 #include "contenido.h"
 using std::vector;
 
-class catalogo{
+class Catalogo{
     private:
-        vector <contenido*> vids;
+        vector <Contenido*> vids;
 
     public:
-        catalogo();
+        Catalogo();
         void allVideos();
         void showVidsCalif(float calif);
         void showVidsGen(string gen);

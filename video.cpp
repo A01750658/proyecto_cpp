@@ -1,9 +1,11 @@
 #include "video.h"
 using std::cout;
 
-video::video(){}
+Video::Video(){
+    
+}
 
-video::video(string idV1,string nombre1,string duracion1, string fecha1, float calificacion1){
+Video::Video(string idV1,string nombre1,string duracion1, string fecha1, float calificacion1){
     idV = idV1;
     nombre = nombre1;
     duracion = duracion1;
@@ -11,10 +13,10 @@ video::video(string idV1,string nombre1,string duracion1, string fecha1, float c
     calificacion = calificacion1;
 }
 
-void video::disp(){
+void Video::disp(){
     cout<<"Se muestra video"<<"\n";
 }
 
-void video::calificar(float calif){
+void Video::calificar(float calif){
     calificacion = calif;
 }
