@@ -2,12 +2,14 @@
 #define pelicula_H
 
 #include <iostream>
+#include <string>
 #include "video.h"
+#include "contenido.h"
 using std::string;
 
-class pelicula : public video{
+class Pelicula : public Video{
     public:
-        pelicula(string idV1,string nombre1,string duracion1, string fecha1, float calificacion1);
+        Pelicula(string idV1,string nombre1,string duracion1, string fecha1, float calificacion1);
         void show();
         void calificar(float calif);
 };

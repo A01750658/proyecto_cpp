@@ -6,16 +6,19 @@
 
 using std::string;
 
-class video{
+class Video{
     private:
         string idV;
         string nombre;
         string duracion;
         string fecha;
         float calificacion;
+        int ep;
+        int temp;
+        string idE;
     public:
-        video();
-        video(string idV1,string nombre1,string duracion1, string fecha1, float calificacion1);
+        Video();
+        Video(string idV1,string nombre1,string duracion1, string fecha1, float calificacion1);
         void disp();
         void calificar(float calif);
 };
