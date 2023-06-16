@@ -1,5 +1,5 @@
-#ifndef contenido_H
-#define contenido_H
+#ifndef CONTENIDO_H
+#define CONTENIDO_H
 
 #include <iostream>
 #include <string>

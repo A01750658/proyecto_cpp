@@ -1,20 +1,23 @@
-#ifndef SERIE_H
-#define SERIE_H
+#ifndef SERIES_H
+#define SERIES_H
 
 #include <iostream>
+#include <string>
 #include <vector>
 #include "episodio.h"
-#include "video.h"
 #include "contenido.h"
+
 using std::vector;
+using std::string;
 
-class Serie: public Video, public Contenido{
-    private:
-        vector <Episodio*> eps;
-        float calificacion;
-
+class Series:public Contenido{
+    private: 
+        vector<Episodio*> episodios;
+        string idS;
+    
     public:
         void show();
+        void calificar(float calif);
         void allVideos();
         void showVidsCalif(float calif);
         void showVidsGen(string gen);

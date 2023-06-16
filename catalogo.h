@@ -1,8 +1,10 @@
-#ifndef catalogo_H
-#define catalogo_H
+#ifndef CATALOGO_H
+#define CATALOGO_H
 
 #include <vector>
 #include "contenido.h"
+#include "pelicula.h"
+#include "serie.h"
 using std::vector;
 
 class Catalogo{

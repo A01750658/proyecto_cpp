@@ -1,10 +1,10 @@
-#ifndef streamaing_H
-#define streaming_H
+#ifndef STREAMING_H
+#define STREAMING_H
 #include "catalogo.h"
 
 class Streaming{
     private:
-        catalogo catalogo;
+        Catalogo Catalogo;
     public:
         void VerCatalogo();
 };
