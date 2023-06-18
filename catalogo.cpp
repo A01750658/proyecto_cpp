@@ -28,23 +28,36 @@ Catalogo::Catalogo(){
     {
         rows++;
         stringstream comi(line);
-        while (getline(comi, l1, ','))
+        /*while (getline(comi, l1, ','))
         {
             str.push_back(l1);
             //cout<<l1<<endl; imprime valores separados por ","
-        }                                                
-        //cout<<line<<endl; imprime toda la linea del csv
+        }*/                                                
+        str.push_back(line);// imprime toda la linea del csv
     }
     file.close();
-    bool gg = false;
     string str2[columns*rows]; //array con nombre de episodio y generos acomodados
+    bool coma = false;
     int cont = 0;
     for (int i = 0; i < int(str.size()); i++)
     {
-        if (gg == false)
+        for (char& c : str[i])
         {
+            if (c == '"')
+            {
+                coma = !coma;
+            }
+            
+            if (coma == false)
+            {
+                if (c == ',')
+                {
+                    cont++;
+                }
+            }
+            str2[cont]+=c;
             
         }
-        
     }
+    cout<<str2[8]<<endl;
 }
