@@ -18,7 +18,7 @@ void Serie::show(){
 }
 
 void Serie::allVideos(){
-
+    
 }
 
 void Serie::showVidsCalif(float calif){
