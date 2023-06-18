@@ -1,10 +1,14 @@
 #include <iostream>
 #include <string>
+#include <vector>
+#include <numeric>
 #include "episodio.h"
 
 using std::string;
 using std::cout;
+using std::vector;
 using std::endl;
+
 
 Episodio::Episodio(){
 
@@ -20,6 +24,18 @@ void Episodio::show(){
     cout << "Se muestra película" << endl;
 }
 
-void Video::calificar(float calif){
+void Episodio::calificarEp(float calif){
 
+}
+
+float Episodio::getCalif(){
+    return calificacion;
+}
+
+string Episodio::getName(){
+    return nombre;
+}
+
+string Episodio::getGen(){
+    return (genero);
 }

@@ -13,12 +13,16 @@ class Episodio: public Video{
         int temp;
         string idV;
         string idE;
+        
 
     public:
         Episodio();
         Episodio(string idV1,string nombre1,string duracion1, string fecha1, float calificacion1, int ep1, int temp1, string idE1);
         void show();
         void calificarEp(float calif);
+        float getCalif();
+        string getName();
+        string getGen();
 
 };
 

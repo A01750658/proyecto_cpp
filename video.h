@@ -5,6 +5,7 @@
 #include <string>
 
 using std::string;
+using std::vector;
 
 class Video{
     protected:
@@ -12,7 +13,9 @@ class Video{
         string nombre;
         string duracion;
         string fecha;
+        string genero;
         float calificacion;
+        string genero;
     public:
         Video();
         Video(string idV1,string nombre1,string duracion1, string fecha1, float calificacion1);

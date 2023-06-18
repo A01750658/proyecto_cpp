@@ -23,7 +23,7 @@ void Pelicula::calificar(string vidNom, float calif){
     calificacion = calif;
 }
 
-void Pelicula::allVideos(){
 
-}
+
+
 

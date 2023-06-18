@@ -11,7 +11,6 @@ class Pelicula : public Video, public Contenido{
     public:
         Pelicula(string idV1,string nombre1,string duracion1, string fecha1, float calificacion1);
         void show();
-        void allVideos();
         void showVidsCalif(float calif);
         void showVidsGen(string gen);
         void showEp(string nomS);
