@@ -58,6 +58,6 @@ Catalogo::Catalogo(){
             str2[cont]+=c;
             
         }
+        cont++;
     }
-    cout<<str2[8]<<endl;
 }
