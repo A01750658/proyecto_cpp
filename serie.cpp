@@ -18,7 +18,9 @@ void Serie::show(){
 }
 
 void Serie::allVideos(){
-    
+    for (int i = 0; i < episodios.size();i++){
+        cout << "Episodio: " << episodios[i] -> getName();
+    }
 }
 
 void Serie::showVidsCalif(float calif){
