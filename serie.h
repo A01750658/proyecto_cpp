@@ -3,11 +3,13 @@
 
 #include <iostream>
 #include <vector>
+#include <unordered_map>
 #include "episodio.h"
 #include "video.h"
 #include "contenido.h"
 using std::vector;
 using std::string;
+using std::unordered_map;
 
 class Serie: public Video, public Contenido{
     private:
@@ -23,8 +25,8 @@ class Serie: public Video, public Contenido{
         void allVideos();
         void showVidsCalif(float calif);
         void showVidsGen(string gen);
-        void showEp(string nomS);
         void agregarEp(Episodio* ep);
+        void calificar(string vidNom, float calif);
 };
 
 #endif
