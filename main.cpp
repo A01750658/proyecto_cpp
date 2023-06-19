@@ -1,7 +1,8 @@
 #include "catalogo.h"
+#include ""
 int main(){
 
-    Catalogo c1;
+    Catalogo c;
 
     return 0;
 }
