@@ -8,7 +8,7 @@ using std::endl;
 Serie::Serie(string iD1, string nombre1, int numEps1){
     iD = iD1;
     nombre = nombre1;
-    numEps = numEps;
+    numEps = numEps1;
 }
 
 void Serie::show(){

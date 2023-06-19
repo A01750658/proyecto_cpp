@@ -3,6 +3,8 @@
 #include <fstream>
 #include <sstream>
 #include <string>
+#include "episodio.h"
+#include "pelicula.h"
 using std::ifstream;
 using std::string;
 using std::stringstream;
@@ -56,8 +58,37 @@ Catalogo::Catalogo(){
                 }
             }
             str2[cont]+=c;
-            
         }
         cont++;
     }
+    string str3[columns*rows]; //array con los datos limpios. sin caracteres que contaminen.
+    for (int i = 0; i < columns*rows; i++)
+    {
+        for (char& c : str2[i])
+        {
+            if (c == ',' || c == '"')
+            {
+            }
+            else{
+                str3[i] += c;
+            }
+        }
+    }
+    vector <Pelicula> pelis;
+    vector <Episodio> episo;
+    int m = 0;
+    for (int i = 0; i < rows; i++)
+    {
+        if (str3[0+(10*m)] != "")
+        {
+            Episodio ep(str3[0+(10*m)],str3[1+(10*m)],str3[2+(10*m)],str3[3+(10*m)],stof(str3[4+(10*m)]),str3[5+(10*m)],str3[6+(10*m)],stoi(str3[7+(10*m)]),stoi(str3[8+(10*m)]),str3[9+(10*m)]);
+            episo.push_back(ep);
+        }
+        else{
+            Pelicula pe(str3[0+(10*m)],str3[1+(10*m)],str3[2+(10*m)],str3[3+(10*m)],stof(str3[4+(10*m)]),str3[5+(10*m)]);
+            pelis.push_back(pe);
+        }
+        m++;
+    }
+    pelis[0].show();
 }

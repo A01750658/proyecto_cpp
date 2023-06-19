@@ -5,12 +5,13 @@ Video::Video(){
     
 }
 
-Video::Video(string idV1,string nombre1,string duracion1, string fecha1, float calificacion1){
+Video::Video(string idV1,string nombre1, string genero1, float calificacion1, string fecha1){
     idV = idV1;
     nombre = nombre1;
-    duracion = duracion1;
+    //duracion = duracion1;
     fecha = fecha1;
     calificacion = calificacion1;
+    genero = genero1;
 }
 
 void Video::disp(){

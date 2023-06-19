@@ -1,1 +1,1 @@
-.//episodio.o: episodio.cpp episodio.h video.h
+.//episodio.o: episodio.cpp video.h episodio.h

@@ -7,7 +7,7 @@ using std::cout;
 using std::endl;
 using std::string;
 
-Pelicula::Pelicula(string idV1,string nombre1,string duracion1, string fecha1, float calificacion1):Video(idV1, nombre1, duracion1, fecha1, calificacion1), Contenido(){
+Pelicula::Pelicula(string idV1,string nombre1,string duracion1, string fecha1, float calificacion1, string genero1):Video(idV1, nombre1, genero1, calificacion1, fecha1), Contenido(){
     idV = idV1;
     nombre = nombre1;
     duracion = duracion1;
@@ -16,7 +16,15 @@ Pelicula::Pelicula(string idV1,string nombre1,string duracion1, string fecha1, f
 }
 
 void Pelicula::show(){
-    cout<<"se muestra pelicula"<< endl;
+    cout << "Nombre: "  << nombre << endl;
+}
+
+void Pelicula::showVidsCalif(float calif){
+    cout << "Calificación: " << calificacion << endl;
+}
+
+void Pelicula::showVidsGen(string gen){
+    cout << "Genero: " << genero << endl;
 }
 
 void Pelicula::calificar(string vidNom, float calif){

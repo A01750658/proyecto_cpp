@@ -10,6 +10,8 @@ using std::vector;
 class Catalogo{
     private:
         vector <Contenido*> vids;
+        unordered_map <string, Contenido*> contenido;
+        unordered_map<string, Serie> series;
 
     public:
         Catalogo();
