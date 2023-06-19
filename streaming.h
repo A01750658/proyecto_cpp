@@ -6,6 +6,7 @@ class Streaming{
     private:
         Catalogo Catalogo;
     public:
+        Streaming();
         void VerCatalogo();
 };
 

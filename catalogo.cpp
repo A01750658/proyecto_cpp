@@ -12,6 +12,8 @@ using std::getline;
 using std::cout;
 using std::endl;
 using std::vector;
+using std::stoi;
+using std::stof;
 
 Catalogo::Catalogo(){
     int rows = 0, columns = 0;
@@ -81,6 +83,7 @@ Catalogo::Catalogo(){
     {
         if (str3[0+(10*m)] != "")
         {
+            cout<<str3[8+(10*m)]<<endl;
             Episodio ep(str3[0+(10*m)],str3[1+(10*m)],str3[2+(10*m)],str3[3+(10*m)],stof(str3[4+(10*m)]),str3[5+(10*m)],str3[6+(10*m)],stoi(str3[7+(10*m)]),stoi(str3[8+(10*m)]),str3[9+(10*m)]);
             episo.push_back(ep);
         }
@@ -90,5 +93,6 @@ Catalogo::Catalogo(){
         }
         m++;
     }
+    
     //pelis[0].show();
 }
