@@ -19,6 +19,10 @@ void Pelicula::show(){
     cout << "Nombre: "  << nombre << endl;
 }
 
+void Pelicula::allVideos(){
+    
+}
+
 void Pelicula::showVidsCalif(float calif){
     cout << "Calificación: " << calificacion << endl;
 }

@@ -40,3 +40,7 @@ void Serie::showVidsGen(string gen){
 void Serie::agregarEp(Episodio* ep){
     episodios.push_back(ep);
 }
+
+void Serie::calificar(string vidNom, float calif){
+
+}

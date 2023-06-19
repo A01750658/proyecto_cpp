@@ -90,5 +90,5 @@ Catalogo::Catalogo(){
         }
         m++;
     }
-    pelis[0].show();
+    //pelis[0].show();
 }
