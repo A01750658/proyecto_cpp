@@ -1,5 +1,6 @@
 #include "video.h"
 using std::cout;
+using std::endl;
 
 Video::Video(){
     
@@ -15,7 +16,7 @@ Video::Video(string idV1,string nombre1, string genero1, float calificacion1, st
 }
 
 void Video::disp(){
-    cout<<"Se muestra video"<<"\n";
+    cout<<"Video:"<< nombre << endl;
 }
 
 void Video::calificar(float calif){
